@@ -2,7 +2,7 @@
 package task
 
 type Task struct {
-	name          string
+	Name          string
 	postponeCount int
 	status        TaskStatus
 }
@@ -15,7 +15,7 @@ func CreateTask(
 	name string,
 ) Task {
 	return Task{
-		name:          name,
+		Name:          name,
 		postponeCount: 0,
 		status:        TaskStatusToDo,
 	}
@@ -27,7 +27,7 @@ func ReconstractTask(
 	status TaskStatus,
 ) Task {
 	return Task{
-		name:          name,
+		Name:          name,
 		postponeCount: postponeCount,
 		status:        status,
 	}
